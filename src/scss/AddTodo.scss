@@ -1,0 +1,33 @@
+.add-todo {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding-top: 20px;
+
+  input,textarea {
+    padding: 10px;
+    border: none;
+    background-color: #eee;
+    margin: 0 20px 20px 20px;
+    outline: none;
+  }
+
+  textarea {
+    min-height: 100px;
+    resize: none;
+  }
+
+  button {
+    padding: 10px;
+    background-color: #39a706;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+
+    &:hover {
+      opacity: .8;
+      cursor: pointer;
+    }
+  }
+}

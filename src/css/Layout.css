@@ -1,0 +1,9 @@
+.container {
+  max-width: 900px;
+  margin: 20px auto; }
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin: 4%; } }
+
+/*# sourceMappingURL=Layout.css.map */

@@ -1,0 +1,8 @@
+.add-todo-item {
+  display: flex; }
+  .add-todo-item input {
+    width: 100%;
+    padding: 10px;
+    font-size: inherit; }
+
+/*# sourceMappingURL=AddTodoItem.css.map */

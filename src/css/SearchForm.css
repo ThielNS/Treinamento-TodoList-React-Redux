@@ -1,0 +1,23 @@
+.search-form {
+  width: 100%;
+  display: flex; }
+  .search-form input {
+    flex: 1;
+    padding: 10px;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: inherit;
+    outline: none;
+    color: #666; }
+  .search-form button {
+    flex-shrink: 1;
+    padding: 10px 20px;
+    background-color: #39a706;
+    border: 1px solid #ddd;
+    border-left: none;
+    font-size: inherit;
+    color: #fff;
+    border-radius: 0 5px 5px 0; }
+
+/*# sourceMappingURL=SearchForm.css.map */
