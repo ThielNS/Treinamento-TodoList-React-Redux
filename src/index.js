@@ -1,10 +1,13 @@
 import {render} from 'react-dom';
 import React from 'react';
 import App from './components/App';
+import Login from './components/Login';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import {todoApp} from './reducers';
 import './css/Reset.css';
+import './css/Layout.css';
+import './awesome/font-awesome.css';
 
 let store = createStore(
   todoApp,
@@ -13,7 +16,7 @@ let store = createStore(
 
 render(
   <Provider store={store}>
-    <App />
+    <Login />
   </Provider>
   ,document.getElementById('root')
 );
