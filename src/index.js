@@ -16,7 +16,7 @@ let store = createStore(
 
 render(
   <Provider store={store}>
-    <Login />
+    <App />
   </Provider>
   ,document.getElementById('root')
 );

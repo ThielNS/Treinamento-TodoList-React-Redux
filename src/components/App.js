@@ -1,27 +1,23 @@
 import React, {Component} from 'react';
-import Header from './Header';
-import TodoList from './TodoList';
-import ButtonAdd from './ButtonAdd'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Login from "./Login";
+import TodoListScreen from "./TodoListScreen";
 
 class App extends Component {
 
   render() {
     return(
-      // <div>
-      //   <form onSubmit={(e) => this.addTodo(e)}>
-      //     <input value={this.state.text} onChange={(e) => this.handleChange(e)} />
-      //     <button onClick={(e) => this.addTodo(e)}>Add Todo</button>
-      //   </form>
-      //   {this.props.state.todos.map((item, index) => {
-      //     return <div key={index}> {item.text} </div>
-      //   })}
-      // </div>
       <div>
-        <Header />
-        <div className="container">
-          <TodoList />
-        </div>
-        <ButtonAdd />
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Login} />
+            <Route exact path="/todolists" component={TodoListScreen} />
+          </Switch>
+        </Router>
       </div>
     );
   }

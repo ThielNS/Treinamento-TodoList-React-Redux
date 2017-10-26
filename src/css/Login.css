@@ -22,29 +22,32 @@
       flex-direction: column;
       align-items: center;
       margin-bottom: 20px; }
+      .login section form input, .login section form button {
+        border: none;
+        padding: 10px;
+        outline: none; }
       .login section form input {
         width: 100%;
         display: block;
-        padding: 10px;
         margin-bottom: 20px;
         font-size: inherit;
         background-color: transparent;
-        border: none;
         color: #fff;
-        border-bottom: 1px solid #fff;
-        outline: none; }
+        border-bottom: 1px solid #fff; }
         .login section form input:focus {
           background-color: rgba(0, 0, 0, 0.1); }
         .login section form input::-webkit-input-placeholder {
           color: #fff; }
       .login section form button {
-        padding: 10px;
         width: 70%;
         border-radius: 20px;
         font-size: inherit;
         border: none;
         background-color: #fff;
         color: #666; }
+      .login section form p {
+        text-transform: uppercase;
+        color: #ccc; }
     .login section p {
       margin-bottom: 10px;
       text-align: center; }
