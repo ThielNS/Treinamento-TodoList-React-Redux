@@ -5,7 +5,9 @@ const SearchForm = (props) => {
   return(
     <form className="search-form">
       <input placeholder="Procurar Tarefa" onChange={e => props.changeText(e)} value={props.searchText} />
-      <button>q</button>
+      <button>
+        <i className="fa fa-search"></i>
+      </button>
     </form>
   );
 }

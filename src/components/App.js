@@ -3,6 +3,7 @@ import Header from './Header';
 import TodoList from './TodoList';
 import ButtonAdd from './ButtonAdd'
 import '../css/Layout.css';
+import '../awesome/font-awesome.css';
 
 class App extends Component {
 

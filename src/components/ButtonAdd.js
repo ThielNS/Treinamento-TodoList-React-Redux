@@ -29,10 +29,16 @@ class ButtonAdd extends Component {
     return (
         <div className="group-buttons">
           <Modal visible={this.state.modal} type={this.state.type} hideModal={this.hideModal.bind(this)} />
-          <button className="button-add" onClick={() => this.toggleTypes()}>{this.state.toggle ? '-' : '+'}</button>
+          <button className="button-add" onClick={() => this.toggleTypes()}>
+            <i className={this.state.toggle ? 'fa fa-minus' : 'fa fa-plus'}></i>
+          </button>
           <div className={this.state.toggle ? 'button-types -visible' : 'button-types'}>
-            <button className="button-add -types" onClick={() => this.showModal('check')}>L</button>
-            <button className="button-add -types" onClick={() => this.showModal('note')}>N</button>
+            <button className="button-add -types" onClick={() => this.showModal('check')}>
+              <i className="fa fa-list"></i>
+            </button>
+            <button className="button-add -types" onClick={() => this.showModal('note')}>
+              <i className="fa fa-font"></i>
+            </button>
           </div>
         </div>
     );
